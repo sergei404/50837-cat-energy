@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [сергей бутенко](https://up.htmlacademy.ru/adaptive/15/user/50837).
-* Наставник: `Неизвестно`.
+* Наставник: `снова украли инопланетяне`.
 
 ---
 
