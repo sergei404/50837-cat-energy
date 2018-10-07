@@ -1,0 +1,40 @@
+.card {
+  width: 100%;
+  padding-top: 10%;
+  background-color: $white;
+}
+
+.card__contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-bottom: 7%;
+}
+
+.card__tagline {
+  display: block;
+  width: 46%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.card__adress {
+  display: block;
+  width: 46%;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card__wrap {
+  width: 100%;
+  min-height: 360px;
+  background-image: url("..img/bg-map-mobile@1x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}

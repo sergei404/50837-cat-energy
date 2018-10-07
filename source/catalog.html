@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <a class="header__logo" href="#"><img src="http://placehold.it/150x100" alt="cat-energi logo" class="logo__image"></a>
-    <button class="header__submit" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-      <span class="header__toggle"></span>
-    </button>
+    <div class="header__wrap">
+      <a class="header__logo" href="#">
+        <img src="img/logo-mobile.svg" alt="cat-energi logo" class="header__logo-image">
+      </a>
+      <button class="header__submit" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span class="header__toggle"></span>
+      </button>
+    </div>
     <nav class="main-nav header__nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -42,7 +47,7 @@
             <table class="catalog__description">
               <tr>
                 <td class="catalog__description-field">Объем</td>
-              < td class="catalog__description-value">500 г</td>
+                <td class="catalog__description-value">500 г</td>
               </tr>
               <tr>
                 <td class="catalog__description-field">Вкус</td>
@@ -70,7 +75,7 @@
                 <td class="catalog__description-value">1000 г</td>
               </tr>
               <tr>
-                td class="catalog__description-field">Вкус</td>
+                <td class="catalog__description-field">Вкус</td>
                 <td class="catalog__description-value">Курица</td>
               </tr>
               <tr>
@@ -301,5 +306,6 @@
       </div>
     </div>
   </footer>
+  </div>
 </body>
 </html>

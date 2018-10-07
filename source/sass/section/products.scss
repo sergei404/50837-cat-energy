@@ -1,0 +1,102 @@
+.products {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.products__losing-weight,
+.products__mass-gathering {
+  position: relative;
+  width: 100%;
+  padding-top: 9%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 4%;
+  background-color: $lightblue;
+}
+
+.products__title {
+  position: relative;
+  @include zeroing;
+
+  padding-left: 70px;
+  margin-bottom: 11%;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  vertical-align: middle;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: -9px;
+    display: block;
+    content: "";
+    width: 53px;
+    height: 53px;
+    background-color: $green;
+    border-radius: 50%;
+  }
+  &::after {
+    position: absolute;
+    left: 5px;
+    top: -11px;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+}
+
+.products__mass-gathering {
+  .products__title {
+    padding-left: 85px;
+    &::before {
+      left: 10px;
+      top: -11px;
+    }
+    &::after {
+      left: 0;
+      top: 0;
+      width: 70px;
+      height: 35px;
+      background-image: url("../img/icon-cat-pro.svg");
+    }
+  }
+}
+
+.products__text {
+  display: block;
+  padding-right: 10%;
+  padding-bottom: 8%;
+  margin-bottom: 8%;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.products__link {
+  display: flex;
+  align-items: center;
+  @include link;
+
+  padding-bottom: 8%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $black;
+  &::after {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 13px;
+    margin-left: 5%;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+};
