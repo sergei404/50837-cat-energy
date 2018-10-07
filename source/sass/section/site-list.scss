@@ -1,0 +1,23 @@
+.site-list {
+  width: 100%;
+  border-bottom: 2px solid #e6e6e6;
+
+  @include list;
+}
+
+.site-list__item {
+  padding-top: 6%;
+  margin-bottom: 6%;
+  text-align: center;
+  border-top: 2px solid #e6e6e6;
+}
+
+.site-list__link {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $black;
+
+  @include link;
+}

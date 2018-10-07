@@ -1,0 +1,68 @@
+.example {
+  width: 100%;
+  background-color: $lightblue;
+  padding-top: 7%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+  @include zeroing;
+
+  font-weight: 400;
+}
+
+.example__text {
+  display: block;
+  width: 82%;
+  margin-bottom: 8%;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__cover {
+  display: flex;
+  width: 46%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4%;
+  margin-bottom: 7%;
+  border: 2px solid #cdcdcd;
+  border-radius: 10px;
+}
+
+.example__number{
+  margin-bottom: 4%;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.example__number-text {
+  display: block;
+  width: 99px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: -16px;
+  font-family: $arial;
+  font-size: 13px;
+  text-align: center;
+  background-color: $lightblue;
+}
+
+.example__allotted {
+  display: block;
+  margin-bottom: 7%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

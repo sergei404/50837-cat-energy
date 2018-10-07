@@ -1,0 +1,53 @@
+.slader {
+  width: 100%;
+  padding-bottom: 8%;
+}
+
+.slader__slade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7%;
+}
+
+.slader__image--thin {
+  display: none;
+}
+
+.slader__wrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.slader__scale {
+  width: 47%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+
+  border: 2px solid #cdcdcd;
+  background-color: $white;
+  border-radius: 16px;
+}
+
+.slader__bar {
+  width: 45%;
+  height: 50%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  background-color: $green;
+  border-radius: 10px;
+}
+
+.slader__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black;
+  background-color: transparent;
+  border: 0;
+}
