@@ -1,0 +1,28 @@
+.program {
+  width: 100%;
+  padding-top: 7%;
+  background-color: $white;
+}
+
+.program__title {
+  display: block;
+
+  @include zeroing;
+  margin-left: 6.5%;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $black;
+}
+
+.program__text {
+  width: 70%;
+  display: block;
+  margin-left: 6.5%;
+  margin-bottom: 7%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black;
+}

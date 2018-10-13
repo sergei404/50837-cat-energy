@@ -34,7 +34,8 @@
 .card__wrap {
   width: 100%;
   min-height: 360px;
-  background-image: url("..img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg/bg-map-mobile@1x.png");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
 }

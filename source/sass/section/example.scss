@@ -9,6 +9,7 @@
 .example__title {
   font-size: 36px;
   line-height: 60px;
+
   @include zeroing;
 
   font-weight: 400;
@@ -39,7 +40,7 @@
   border-radius: 10px;
 }
 
-.example__number{
+.example__number {
   margin-bottom: 4%;
   font-size: 24px;
   font-weight: 400;
