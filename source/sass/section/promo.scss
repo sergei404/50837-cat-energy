@@ -1,13 +1,14 @@
 .promo {
   position: relative;
   background-color: $white;
+
   &::before {
     position: absolute;
     display: block;
     content: "";
     width: 100%;
     min-height: 315px;
-    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/bg/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -26,6 +27,7 @@
 }
 
 .promo__title {
+  position: relative;
   display: block;
   width: 77%;
   margin: 0 auto;
@@ -47,9 +49,11 @@
 
 .promo__link {
   width: 90%;
-  @include link;
 
+  @include link;
   padding-top: 4%;
   padding-bottom: 4%;
   margin-bottom: 7%;
+  font-size: 14px;
+  line-height: 18px;
 }

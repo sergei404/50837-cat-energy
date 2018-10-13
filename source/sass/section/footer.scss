@@ -1,4 +1,50 @@
 .footer {
   width: 100%;
   background-color: $lightblue;
+  padding-bottom: 7%;
+}
+
+.footer__wrap {
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include link;
+
+  padding-bottom: 8%;
+  border-bottom: 2px solid #cdcdcd;
+}
+
+.footer__logo-image {
+  min-width: 130px;
+  height: auto;
+}
+
+.footer__list {
+  @include list;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8%;
+}
+
+.footer__text {
+  font-family: $arial;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #444444;
+}
+
+.footer__text-uppercase {
+  text-transform: uppercase;
 }
