@@ -13,10 +13,43 @@
 
 .site-list__link {
   font-size: 20px;
-  line-height: 20px;
   text-transform: uppercase;
   font-weight: 500;
   color: $black;
 
   @include link;
+}
+
+@media #{$tablet} {
+  .site-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    @include zeroing;
+    margin-left: 4%;
+    border: none;
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+}
+
+@media #{$desktop} {
+  .site-list {
+    &--color {
+      .site-list__link {
+        color: $white;
+      }
+    }
+  }
+
+  .site-list__link {
+    font-size: 20px;
+  }
 }

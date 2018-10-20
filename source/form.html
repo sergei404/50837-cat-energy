@@ -9,15 +9,13 @@
 </head>
 <body>
   <header class="header header--show">
-    <div class="header__wrap">
-      <a class="header__logo" href="#">
-        <img src="img/icons/logo-mobile.svg" alt="cat-energi logo" class="header__logo-image">
-      </a>
-      <button class="header__submit header__submit--active" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <span class="header__toggle"></span>
-      </button>
-    </div>
+    <a class="header__logo" href="#">
+      <img src="img/icons/logo-mobile.svg" alt="cat-energi logo" class="header__logo-image">
+    </a>
+    <button class="header__submit header__submit--active" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <span class="header__toggle"></span>
+    </button>
     <nav class="main-nav header__nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -67,8 +65,7 @@
           </label>
         </div>
         <div class="form__block form__block--contacts">
-          <h2 class="form__title form__title--contacts">Контактные данные<br>
-          (владельца кота)</h2>
+          <h2 class="form__title form__title--contacts">Контактные&nbsp;данные (владельца кота)</h2>
           <p class="form__cover">
             <label class="form__label">e-mail:*
               <input class="form__input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="kuklachev@gmail.com">
@@ -86,7 +83,7 @@
         </div>
         <div class="form__block form__block--extra">
           <h2 class="form__title form__title--extra">Дополнительно</h2>
-          <p class="form__cover">
+          <p class="form__cover form__cover--check">
             <label class="form__label">
               <input class="form__checkbox" type="checkbox" checked>
               <span class="form__fake"></span>
@@ -122,7 +119,8 @@
       <div class="card__contacts">
         <p class="card__tagline">приглашаем<br> к сотрудничеству дилеров!</p>
         <p class="card__adress">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+          <span class="card__adress-town">Санкт-Петербург</span>
+        </p>
       </div>
       <div class="card__wrap"></div>
     </section>

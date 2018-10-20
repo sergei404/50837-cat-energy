@@ -8,18 +8,16 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header header--show">
-      <div class="header__wrap">
-        <a class="header__logo" href="#">
-          <img src="img/icons/logo-mobile.svg" alt="cat-energi logo" class="header__logo-image">
-        </a>
-        <button class="header__submit header__submit--active" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <span class="header__toggle"></span>
-        </button>
-      </div>
-      <nav class="main-nav header__nav">
-        <ul class="main-nav__list site-list">
+    <header class="header header--primary">
+      <a class="header__logo" href="#">
+        <img src="img/icons/logo-mobile.svg" alt="cat-energi logo" class="header__logo-image">
+      </a>
+      <button class="header__submit header__submit--active" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span class="header__toggle"></span>
+      </button>
+      <nav class="main-nav main-nav--show header__nav">
+        <ul class="main-nav__list site-list site-list--color">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">главная</a>
           </li>
@@ -44,14 +42,15 @@
       <section class="products">
         <h2 class="visually-hidden">Линейка продуктов</h2>
         <div class="products__losing-weight">
+          <span class="products__block"></span>
           <h2 class="products__title">похудение</h2>
           <p class="products__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
             Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="#" class="products__link">Каталог Slim</a>
         </div>
         <div class="products__mass-gathering">
-          <h2 class="products__title">набор массы</h2>
-          <p class="products__text">Заработать авторитет среди дворовых котов и даже собак?
+          <h2 class="products__title products__title--mass">набор массы</h2>
+          <p class="products__text products__text--last">Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="#" class="products__link">Каталог pro</a>
         </div>
@@ -62,28 +61,34 @@
           <li class="working__item working__item--sheet">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="working__item working__item--water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="working__item working__item--spoon">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="working__item working__item--time">Уже через месяц наслаждайтесь&nbsp;изменениями к лучшему вашего питомца!</li>
+          <li class="working__item working__item--time">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</li>
         </ul>
       </section>
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит&nbsp;по 16 часов в день.</p>
-        <div class="example__wrap">
-          <div class="example__cover">
-            <span class="example__number">5кг</span>
-            <span class="example__number-text">снижение веса</span>
-          </div>
-          <div class="example__cover">
-            <span class="example__number">60 дней</span>
-            <span class="example__number-text">затрачено времени</span>
+        <div class="example__block">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит&nbsp;по 16 часов в день.</p>
+          <div class="example__wrap">
+            <div class="example__cover">
+              <span class="example__number">5кг</span>
+              <span class="example__number-text">снижение веса</span>
+            </div>
+            <div class="example__cover">
+              <span class="example__number">60 дней</span>
+              <span class="example__number-text example__number-text--long">затрачено времени</span>
+            </div>
+            <b class="example__allotted">затраты на питание: <span class="example__allotted-number">15 000 руб</span></b>
           </div>
         </div>
-        <b class="example__allotted">затраты на питание: <span class="example__allotted-number">15 000 руб</span></b>
         <div class="example__slader slader">
-          <div class="slader__slade">
-            <img src="img/content/before-mobile@1x.png" alt="big cat" class="slader__image slader__image--thick">
-            <img src="img/content/after-mobile@1x.png" alt="thin cat" class="slader__image slader__image--thin">
-          </div>
+          <ul class="slader__slades">
+            <li class="slader__slade slader__slade--thick">
+              <img src="img/content/before-mobile@1x.png" alt="big cat" class="slader__image">
+            </li>
+            <li class="slader__slade slader__slade--thin">
+              <img src="img/content/after-mobile@1x.png" alt="thin cat" class="slader__image">
+            </li>
+          </ul>
           <div class="slader__wrap">
             <button class="slader__button slader__button--before" type="button">Было</button>
             <div class="slader__scale">
@@ -100,7 +105,8 @@
         <div class="card__contacts">
           <p class="card__tagline">приглашаем<br> к сотрудничеству дилеров!</p>
           <p class="card__adress">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+            <span class="card__adress-town">Санкт-Петербург</span>
+          </p>
         </div>
         <div class="card__wrap"></div>
       </section>
@@ -108,7 +114,7 @@
         <a class="footer__logo" href="#"><img src="../img/icons/logo-footer.svg"  alt="cat-energi logo footer" class="footer__logo-image"></a>
         <ul class="footer__list social">
           <li class="social__item">
-            <a href="#" class="social__link">
+            <a href="#" class="social__link social__link--vk">
               <svg version="1.1" id="Layer_1" width="22" height="12" fill="#666666" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
                 <g>
@@ -133,7 +139,7 @@
             </a>
           </li>
           <li class="footer__item social__item">
-            <a href="#" class="social__link">
+            <a href="#" class="social__link social__link--insta">
               <svg version="1.1" id="Layer_1" width="16" height="16" fill="#666666" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
                 <style type="text/css">
@@ -151,7 +157,7 @@
             </a>
           </li>
           <li class="footer__item social__item">
-            <a href="#" class="social__link">
+            <a href="#" class="social__link social__link--fb">
               <svg version="1.1" id="Layer_1" width="10" height="19" fill="#666666" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
                 <g>
@@ -168,7 +174,7 @@
           <p class="footer__text"><span class="footer__text-uppercase">html</span> academy</p>
           <a href="https://up.htmlacademy.ru/adaptive/15" class="footer__link-html" alt="htmlacademy logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 60 60">
-              <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+              <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
             </svg>
           </a>
         </div>

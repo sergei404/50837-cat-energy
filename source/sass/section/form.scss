@@ -4,13 +4,8 @@
 
 .form__block {
   width: 100%;
-  padding-left: 6.5%;
   margin-bottom: 7%;
   border-bottom: 2px solid #e6e6e6;
-
-  &--name {
-    padding-right: 6.5%;
-  }
 
   &--comment {
     border: none;
@@ -21,6 +16,7 @@
   }
 
   &--envelope {
+    padding-left: 6.5%;
     padding-right: 6.5%;
     text-align: center;
     border: none;
@@ -31,6 +27,8 @@
   width: 100%;
   display: flex;
   align-items: center;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
   margin-bottom: 7%;
   font-size: 16px;
   line-height: 18px;
@@ -109,26 +107,25 @@
   }
 }
 
-.form__contacts {
-  width: 100%;
-  padding-top: 7%;
-  padding-left: 6.5%;
-}
-
 .form__title {
   @include zeroing;
   display: flex;
   align-items: center;
+  margin-left: 6.5%;
   margin-bottom: 7%;
   font-size: 24px;
   font-weight: 400;
   white-space: nowrap;
 
+  &--contacts {
+    white-space: pre-wrap;
+  }
+
   &::after {
     display: block;
     width: 100%;
-    margin-left: 7%;
-    margin-top: 2%;
+    margin-left: 4%;
+    margin-top: 1%;
     content: "";
     height: 5px;
     background-color: $green;
@@ -136,7 +133,6 @@
 }
 
 .form__cover {
-  padding-right: 6.5%;
   margin-bottom: 10%;
 }
 
@@ -155,4 +151,97 @@
   line-height: 16px;
   font-weight: 400;
   color: #444444;
+}
+
+@media #{$tablet} {
+  .form__block {
+    border: none;
+
+    &--advice {
+      width: 87%;
+      margin: 0 auto;
+      padding-top: 5%;
+      margin-bottom: 7%;
+      border: 2px solid #e6e6e6;
+    }
+
+    &--envelope {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  .form__title {
+    white-space: nowrap;
+    margin-left: 0;
+
+    &::before {
+      display: block;
+      width: 6.5%;
+      margin-right: 4%;
+      margin-top: 1%;
+      content: "";
+      height: 5px;
+      background-color: $green;
+    }
+  }
+
+  .form__cover {
+    &--check {
+      display: flex;
+      flex-wrap: wrap;
+
+      .form__label {
+        width: 47%;
+        margin-left: 2%;
+      }
+    }
+  }
+
+  .form__button {
+    width: 47%;
+    padding-bottom: 2.7%;
+    padding-top: 2.7%;
+  }
+
+  .form__hint {
+    width: 41%;
+    text-align: left;
+  }
+}
+
+@media #{$desktop} {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__block {
+    width: 100%;
+
+    &--name {
+      width: 50%;
+    }
+
+    &--advice {
+      width: 40%;
+      margin-right: 5%;
+    }
+  }
+
+  .form__cover {
+    margin-bottom: 0;
+
+    &--check {
+      flex-wrap: nowrap;
+
+      .form__label {
+        width: 25%;
+
+        @include zeroing;
+        margin-left: 5%;
+      }
+    }
+  }
 }
