@@ -39,3 +39,48 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media #{$tablet} {
+  .card__contacts {
+    justify-content: space-between;
+  }
+
+  .card__tagline {
+    width: 30%;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .card__adress {
+    width: 30%;
+    font-size: 16px;
+    text-align: end;
+  }
+
+  .card__adress-town {
+    line-height: 55px;
+  }
+}
+
+@media #{$desktop} {
+  .card {
+    position: relative;
+    padding-top: 0;
+  }
+
+  .card__contacts {
+    position: absolute;
+    top: 105px;
+    left: 88px;
+    justify-content: space-around;
+    min-width: 570px;
+    min-height: 210px;
+
+    @include zeroing;
+    background-color: $white;
+  }
+
+  .card__wrap {
+    min-height: 410px;
+  }
+}

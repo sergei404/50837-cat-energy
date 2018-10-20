@@ -33,12 +33,13 @@
 
 .footer__copyright {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding-top: 8%;
 }
 
+
 .footer__text {
+  margin-right: auto;
   font-family: $arial;
   font-size: 16px;
   text-transform: capitalize;
@@ -47,4 +48,21 @@
 
 .footer__text-uppercase {
   text-transform: uppercase;
+}
+
+@media #{$tablet} {
+  .footer__wrap {
+    display: flex;
+    align-items: center;
+    padding-top: 6%;
+  }
+
+  .footer__logo {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .footer__copyright {
+    padding-top: 0;
+  }
 }

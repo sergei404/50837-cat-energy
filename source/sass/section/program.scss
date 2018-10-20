@@ -26,3 +26,17 @@
   text-transform: uppercase;
   color: $black;
 }
+
+@media #{$tablet} {
+  .program__title {
+    font-size: 60px;
+    margin-bottom: 5%;
+  }
+
+  .program__text {
+    width: 330px;
+    margin-left: 12%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

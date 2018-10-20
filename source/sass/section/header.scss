@@ -1,5 +1,11 @@
 .header {
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 6%;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
   background-color: $white;
   border-bottom: 2px solid #e6e6e6;
 }
@@ -10,27 +16,26 @@
   }
 }
 
-.header__wrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding-top: 6%;
-  padding-left: 6.5%;
-  padding-right: 6.5%;
-  margin-bottom: 6%;
-}
-
 .header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 195px;
+  min-width: 195px;
+
+  @include link;
+  margin-right: auto;
+  margin-bottom: 6%;
+}
+
+.header__logo-image {
+  min-width: 195px;
   margin-right: auto;
 }
 
 .header__submit {
   width: 40px;
   height: 25px;
+  margin-bottom: 6%;
   border: 0;
   outline: 0;
   background-color: transparent;
@@ -80,59 +85,35 @@
 }
 
 @media #{$tablet} {
-  .page-header__wrap {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 4.2%;
-    padding-left: 3%;
-    padding-right: 1.8%;
-    padding-bottom: 6%;
+  .header {
+    flex-wrap: nowrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    border: none;
   }
 
-  .page-header__logo-mobale {
+  .header__logo {
+    @include zeroing;
+  }
+
+  .header__submit {
     display: none;
   }
 
-  .page-header__logo-tablet {
-    display: inline-block;
-  }
-
-  .page-header__submit {
-    padding-top: 3%;
+  .header__nav {
+    display: block;
   }
 }
 
 @media #{$desktop} {
-  .page-header {
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: nowrap;
-    padding-left: 8.5%;
-    padding-right: 9%;
-    padding-top: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .page-header__wrap {
-    width: 40%;
-    padding-top: 2%;
-  }
-
-  .page-header__logo {
-    margin-top: 1%;
-  }
-
-  .page-header__logo-tablet {
-    display: none;
-  }
-
-  .page-header__logo-desktop {
-    display: inline;
-  }
-
-  .page-header__submit {
-    display: none;
+  .header {
+    &--primary {
+      position: relative;
+      padding-top: 4%;
+      margin-bottom: -7%;
+      z-index: 11;
+      background-color: transparent;
+    }
   }
 }

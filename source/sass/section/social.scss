@@ -15,3 +15,13 @@
     margin-left: 0;
   }
 }
+
+
+@media #{$tablet} {
+  .social {
+    width: 33%;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+}

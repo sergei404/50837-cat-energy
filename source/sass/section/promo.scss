@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    background-color: $green;
   }
 }
 
@@ -27,10 +28,10 @@
 }
 
 .promo__title {
-  position: relative;
   display: block;
   width: 77%;
-  margin: 0 auto;
+
+  @include zeroing;
   margin-bottom: 7%;
   font-size: 36px;
   line-height: 36px;
@@ -56,4 +57,79 @@
   margin-bottom: 7%;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media #{$tablet} {
+  .promo {
+    padding-left: 17%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__wrap {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .promo__title {
+    width: 67%;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $black;
+  }
+
+  .promo__tagline {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
+
+  .promo__product {
+    position: relative;
+    min-width: 570px;
+    height: auto;
+    order: 1;
+    align-self: center;
+    margin-top: -17%;
+    z-index: -1;
+  }
+
+  .promo__link {
+    width: 250px;
+    padding: 1.7%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media #{$desktop} {
+  .promo {
+    padding-left: 12%;
+    margin-bottom: 10%;
+
+    &::before {
+      display: block;
+      width: 50%;
+      min-height: 700px;
+      right: 0;
+      background-position: left;
+    }
+  }
+
+  .promo__wrap {
+    padding-top: 16%;
+  }
+
+  .promo__title {
+    width: 40%;
+    margin-bottom: 3%;
+  }
+
+  .promo__product {
+    margin-top: -42%;
+    margin-left: 12.5%;
+  }
 }
