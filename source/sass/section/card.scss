@@ -45,6 +45,11 @@
   }
 }
 
+.card__wrap iframe {
+  width: 100%;
+  min-height: 365px;
+}
+
 @media #{$tablet} {
   .card {
     padding-top: 4.2%;
@@ -85,6 +90,10 @@
       background-size: 110px auto cover;
     }
   }
+
+  .card__wrap iframe {
+    min-height: 390px;
+  }
 }
 
 @media #{$desktop} {
@@ -122,5 +131,9 @@
       background-image: url("../img/map-pin.png"), url("../img/bg/bg-map-desktop@2x.png");
       background-size: 110px auto cover;
     }
+  }
+
+   .card__wrap iframe {
+    min-height: 400px;
   }
 }
