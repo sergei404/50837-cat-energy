@@ -26,6 +26,11 @@
   min-height: 232px;
 }
 
+.slader__image {
+  width: 100%;
+  height: auto;
+}
+
 .slader__cover {
   width: 62%;
   display: flex;
@@ -177,7 +182,7 @@
   }
 
   .slader__slade {
-    padding-bottom: 11.5%;
+    padding-bottom: 12.2%;
 
     &--thick {
       background-image: linear-gradient($white 34.1%, $lightblue 34.1%);
