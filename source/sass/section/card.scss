@@ -49,6 +49,7 @@
   .card {
     padding-top: 4.2%;
   }
+
   .card__contacts {
     justify-content: space-between;
     padding-left: 9%;
@@ -99,11 +100,11 @@
     justify-content: space-around;
     min-width: 570px;
     min-height: 200px;
-    @include zeroing;
 
+    @include zeroing;
     padding-left: 1.8%;
     padding-right: 1.6%;
-    padding-top: .7%;
+    padding-top: 0.7%;
     background-color: $white;
   }
 

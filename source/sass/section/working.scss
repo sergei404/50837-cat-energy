@@ -68,7 +68,6 @@
     padding-top: 2%;
     margin-bottom: 0;
     border-bottom: 2px solid #e6e6e6;
-
   }
 
   .working__title {
@@ -127,6 +126,7 @@
 
     &--spoon {
       margin-bottom: 4%;
+
       &::after {
         content: "3";
       }
@@ -135,6 +135,7 @@
     &--time {
       padding-right: 8%;
       margin-bottom: 4%;
+
       &::after {
         content: "4";
         right: 60px;
@@ -175,7 +176,7 @@
       right: 12px;
     }
 
-     &--sheet {
+    &--sheet {
       &::after {
         right: 30px;
       }

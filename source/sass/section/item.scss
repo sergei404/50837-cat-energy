@@ -27,6 +27,7 @@
     min-width: 32px;
     min-height: 32px;
     margin-bottom: 7%;
+
     &::before {
       display: block;
       content: "";
@@ -82,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: .5%;
+  margin-bottom: 0.5%;
 }
 
 .item__link-button {
@@ -156,7 +157,7 @@
     }
 
     &--big {
-     .item__image {
+      .item__image {
         min-width: 195px;
         min-height: 208px;
       }
@@ -164,6 +165,7 @@
 
     &--plus {
       margin-bottom: 1%;
+
       &::before {
         min-width: 60px;
         min-height: 60px;
@@ -186,6 +188,7 @@
 
   .item__cover {
     width: 100%;
+
     @include zeroing;
   }
 
@@ -204,10 +207,10 @@
   }
 
   .item__text {
-  font-size: 16px;
-  width: 55%;
-  margin: 0 auto;
-}
+    font-size: 16px;
+    width: 55%;
+    margin: 0 auto;
+  }
 
   .item__link-button {
     width: 76.2%;

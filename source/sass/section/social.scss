@@ -36,12 +36,12 @@
     height: 12px;
   }
 
-   &--insta svg {
+  &--insta svg {
     width: 16px;
     height: 16px;
   }
 
-   &--fb svg {
+  &--fb svg {
     width: 10px;
     height: 19px;
   }
@@ -53,7 +53,7 @@
   }
 
   &:active {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 

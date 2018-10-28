@@ -71,6 +71,7 @@
   .slader {
     position: relative;
   }
+
   .slader__slades {
     width: 100%;
     margin-bottom: 0;
@@ -142,7 +143,7 @@
       box-shadow: 0 4px 5px 0 #0000004d;
     }
 
-    &:before {
+    &::before {
       position: absolute;
       left: 13px;
       top: 13px;
@@ -179,7 +180,7 @@
     padding-bottom: 11.5%;
 
     &--thick {
-       background-image: linear-gradient($white 34.1%, $lightblue 34.1%);
+      background-image: linear-gradient($white 34.1%, $lightblue 34.1%);
 
       .slader__slade-image {
         left: 44.9%;
@@ -187,7 +188,7 @@
     }
 
     &--thin {
-       background-image: linear-gradient($white 34.1%, #eaeaea 34.1%);
+      background-image: linear-gradient($white 34.1%, #eaeaea 34.1%);
 
       .slader__slade-image {
         right: 55.1%;

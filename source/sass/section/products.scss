@@ -1,7 +1,6 @@
 .products {
   padding-left: 6%;
   padding-right: 6%;
-
 }
 
 .products__losing-weight,
@@ -110,8 +109,9 @@
       background-image: url("../img/icons/icon-right-arrow-verylong.svg");
     }
   }
+
   &:active {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
