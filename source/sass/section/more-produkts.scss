@@ -1,13 +1,14 @@
 .more-produkts {
   width: 100%;
-  padding-top: 7%;
+  padding-top: 9.7%;
+  margin-bottom: 11.5%;
   background-color: $white;
 }
 
 .more-produkts__title {
   @include zeroing;
-  margin-left: 6.5%;
-  margin-bottom: 7%;
+  margin-left: 6%;
+  margin-bottom: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,20 +30,20 @@
 
 .more-produkts__list {
   @include list;
-  margin-bottom: 11%;
+  margin-bottom: 11.5%;
   border-bottom: 2px solid #e6e6e6;
 }
 
 .more-produkts__item {
-  padding-left: 6.5%;
-  padding-right: 6.5%;
-  padding-top: 6%;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  padding-top: 4.2%;
   border-top: 2px solid #e6e6e6;
 }
 
 .more-produkts__headline {
   @include zeroing;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -56,7 +57,7 @@
 
 .more-produkts__table {
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   font-family: $arial;
   font-size: 14px;
   line-height: 14px;
@@ -64,15 +65,20 @@
 
   tr {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 }
 
 .more-produkts__link-button {
   @include link;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  margin-bottom: 8%;
+
+  width: 99%;
+  margin: 0 auto;
+  padding: 3.35%;
+  margin-bottom: 6%;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .more-produkts__present {
@@ -81,19 +87,23 @@
   align-items: center;
   min-width: 280;
   min-height: 290px;
-  margin-left: 6.5%;
+  margin-left: 6%;
   margin-right: 6.5%;
+  padding-top: 8%;
   background-image: url("../img/bg/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg/gift-photo-mobile@1x.jpg");
+  }
 }
 
 .more-produkts__text {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   font-family: $arial;
   font-size: 16px;
@@ -106,7 +116,7 @@
     content: "";
     min-width: 60px;
     min-height: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     background-image: url("../img/icons/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -114,6 +124,10 @@
 }
 
 @media #{$tablet} {
+  .more-produkts {
+    padding-top: 4.5%;
+  }
+
   .more-produkts__title {
     margin-left: 0;
     font-size: 36px;
@@ -121,8 +135,8 @@
 
     &::before {
       display: block;
-      width: 6.5%;
-      margin-right: 4%;
+      width: 8.5%;
+      margin-right: 5%;
       margin-top: 1%;
       content: "";
       height: 5px;
@@ -130,17 +144,21 @@
     }
 
     &::after {
-      margin-left: 4%;
+      margin-left: 5%;
     }
   }
 
   .more-produkts__list {
     border: 2px solid #e6e6e6;
-    margin-left: 6.5%;
-    margin-right: 6.5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 9.2%;
   }
 
   .more-produkts__item {
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-right: 4.85%;
     display: flex;
     flex-wrap: wrap;
 
@@ -151,12 +169,14 @@
 
   .more-produkts__headline {
     margin-right: auto;
+    margin-bottom: 3.5%;
     font-size: 20px;
     line-height: 20px;
   }
 
   .more-produkts__table {
     width: 50%;
+    margin-bottom: 3.55%;
     font-size: 16px;
     line-height: 16px;
 
@@ -171,17 +191,33 @@
 
   .more-produkts__link-button {
     width: 100%;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-top: 1.65%;
+    padding-bottom: 1.65%;
+    margin-bottom: 3.8%;
+  }
+
+  .more-produkts__present {
+    min-height: 200px;
+    padding-top: 0;
+    padding-left: 11.5%;
+    padding-right: 16.3%;
+    margin-left: 4.1%;
+    margin-right: 3.8%;
+    background-image: url("../img/bg/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg/gift-photo-tablet@1x.jpg");
+    }
   }
 
   .more-produkts__text {
     flex-direction: row;
-    justify-content: space-around;
+    align-items: flex-end;
+    justify-content: space-between;
     text-align: start;
 
     &::before {
-      margin-bottom: 0;
+      margin-bottom: 1%;
     }
   }
 }

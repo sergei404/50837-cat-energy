@@ -9,8 +9,12 @@
 </head>
 <body>
   <header class="header header--show">
-    <a class="header__logo" href="#">
-      <img src="img/icons/logo-mobile.svg" alt="cat-energi logo" class="header__logo-image">
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-image" src="img/logo-mobile.svg" alt="Кэт энерджи">
+      </picture>
     </a>
     <button class="header__submit header__submit--active" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -25,7 +29,7 @@
           <a class="site-list__link" href="catalog.html">каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">подбор програмы</a>
+          <a class="site-list__link site-list__link--active">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -37,41 +41,62 @@
       программу питания для вашего кота</p>
       <form class="form program__form" action="">
         <div class="form__block form__block--name">
-          <label class="form__label">имя:*
+          <label class="form__label">
+            <span class="form__text">имя:*</span>
             <input class="form__input" type="text" placeholder="барсик">
           </label>
-          <label class="form__label">вес (кг):*
+          <label class="form__label">
+            <span class="form__text">вес (кг):*</span>
             <input class="form__input" type="text" placeholder="7">
           </label>
-          <label class="form__label">возраст (лет):
+          <label class="form__label">
+            <span class="form__text">возраст (лет):</span>
             <input class="form__input" type="text" placeholder="7">
           </label>
         </div>
         <div class="form__block form__block--advice">
-          <label class="form__label form__label-radio">
+          <label class="form__label form__label--radio">
             <input class="form__checkbox" type="radio" name="option" value="weightloss" checked>
             <span class="form__fake form__fake--radio"></span>
-            <span class="form__word">похудение</span>
+            <span class="form__text">похудение</span>
           </label>
-          <label class="form__label form__label-radio">
+          <label class="form__label form__label--radio">
             <input class="form__checkbox" type="radio" name="option" value="weightgain">
             <span class="form__fake form__fake--radio"></span>
-            <span class="form__word">набор массы</span>
+            <span class="form__text">набор массы</span>
           </label>
-          <label class="form__label form__label-radio">
+          <label class="form__label form__label--radio">
             <input class="form__checkbox" type="radio" name="option" value="notknow">
             <span class="form__fake form__fake--radio"></span>
-            <span class="form__word">не знаю (нужен ваш совет)</span>
+            <span class="form__text">не знаю (нужен ваш совет)</span>
           </label>
         </div>
         <div class="form__block form__block--contacts">
           <h2 class="form__title form__title--contacts">Контактные&nbsp;данные (владельца кота)</h2>
           <p class="form__cover">
-            <label class="form__label">e-mail:*
+            <label class="form__label form__label--left">
+              <span class="form__text">e-mail:*</span>
               <input class="form__input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="kuklachev@gmail.com">
+              <span class="form__input-image form__input-image--mail">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+                  <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" />
+                </svg>
+              </span>
             </label>
-            <label class="form__label">телефон:*
+            <label class="form__label">
+              <span class="form__text form__text--data">телефон:*</span>
               <input class="form__input" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90">
+              <span class="form__input-image form__input-image--phone">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                  <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
+                  <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                  c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                  C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                  C7.8,20,8.1,19.7,8.1,19.4z" />
+                </svg>
+              </span>
             </label>
           </p>
         </div>
@@ -87,28 +112,28 @@
             <label class="form__label">
               <input class="form__checkbox" type="checkbox" checked>
               <span class="form__fake"></span>
-              <span class="form__word">сахарозаменитель</span>
+              <span class="form__text">сахарозаменитель</span>
             </label>
             <label class="form__label">
               <input class="form__checkbox" type="checkbox">
               <span class="form__fake"></span>
-              <span class="form__word">питьевая вода</span>
+              <span class="form__text">питьевая вода</span>
             </label>
             <label class="form__label">
               <input class="form__checkbox" type="checkbox">
               <span class="form__fake"></span>
-              <span class="form__word">молоко</span>
+              <span class="form__text">молоко</span>
             </label>
             <label class="form__label">
               <input class="form__checkbox" type="checkbox">
               <span class="form__fake"></span>
-              <span class="form__word">витамины</span>
+              <span class="form__text">витамины</span>
             </label>
           </p>
         </div>
         <div class="form__block form__block--envelope">
           <button type="submit" class="form__button link-button">отправить заявку</button>
-          <p class="form__hint">* &mdash; обязательные поля</p>
+          <p class="form__hint">* &mdash; Обязательные поля</p>
         </div>
       </form>
     </section>
@@ -125,75 +150,79 @@
       <div class="card__wrap"></div>
     </section>
     <div class="footer__wrap">
-      <a class="footer__logo" href="#"><img src="../img/icons/logo-footer.svg" alt="cat-energi logo footer" class="footer__logo-image"></a>
-      <ul class="footer__list social">
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <svg version="1.1" id="Layer_1" width="22" height="12" fill="#666666" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;"
-              xml:space="preserve">
-              <g>
-                <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
-                    c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
-                    c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2
-                    C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0
-                    c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9
-                    c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5
-                    c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3
-                    c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1
-                    c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7
-                    c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0
-                    C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3
-                    c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2
-                    c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8
-                    c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
-                    c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z" />
-              </g>
-            </svg>
-            <span class="visually-hidden">vk</span>
-          </a>
-        </li>
-        <li class="footer__item social__item">
-          <a href="#" class="social__link">
-            <svg version="1.1" id="Layer_1" width="16" height="16" fill="#666666" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;"
-              xml:space="preserve">
-              <style type="text/css">
-                .st0 {
-                  fill: #231F20;
-                }
-              </style>
-              <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
-                  L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z" />
-              <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
-                  C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z" />
-              <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
-            </svg>
-            <span class="visually-hidden">instagram</span>
-          </a>
-        </li>
-        <li class="footer__item social__item">
-          <a href="#" class="social__link">
-            <svg version="1.1" id="Layer_1" width="10" height="19" fill="#666666" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;"
-              xml:space="preserve">
-              <g>
-                <path d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
-                      M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
-                    H1.1v2.3h2V18z" />
-              </g>
-            </svg>
-            <span class="visually-hidden">facebook</span>
-          </a>
-        </li>
-      </ul>
+      <a class="footer__logo" href="#"><img src="img/logo-footer.svg" alt="cat-energi logo footer" class="footer__logo-image"></a>
+      <div class="social footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              <!-- <svg width="22" height="12" fill="#666666">
+                    <use xlink:href="../img/icons/#vk-mobile"></use>
+                  </svg> -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                <g>
+                  <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
+                      c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
+                      c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2
+                      C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0
+                      c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9
+                      c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5
+                      c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3
+                      c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1
+                      c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7
+                      c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0
+                      C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3
+                      c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2
+                      c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8
+                      c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
+                      c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z" />
+                </g>
+              </svg>
+              <span class="visually-hidden">vk</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--insta">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <style type="text/css">
+                  <!-- .st0 {
+                    fill: #231F20;
+                  }
+
+                  -->
+                </style>
+                <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
+                    L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z" />
+                <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
+                    C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z" />
+                <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
+              </svg>
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+                <g>
+                  <path d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
+                       M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
+                      H1.1v2.3h2V18z" />
+                </g>
+              </svg>
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="footer__copyright">
-        <p class="footer__text"><span class="footer__text-uppercase">html</span> academy</p>
         <a href="https://up.htmlacademy.ru/adaptive/15" class="footer__link-html" alt="htmlacademy logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 60 60">
-            <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
           </svg>
         </a>
+        <p class="footer__text"><span class="footer__text-uppercase">html</span> academy</p>
       </div>
     </div>
   </footer>

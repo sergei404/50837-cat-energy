@@ -1,25 +1,26 @@
 .link-button {
   display: block;
+  font-family: $oswald;
   text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
   text-transform: uppercase;
   color: $white;
   background-color: $green;
   border: 0;
   outline: 0;
 
-  &:hover {
-    background-color: #1c9b5e;
+   &:hover {
+    background-color: #5eaa2f;
   }
 
   &:active {
-    color: #78bb96;
-    background-color: #1c9b5e;
+    background-color: #5eaa2f;
+    color: #8fc46e;
   }
 
   &:disabled {
-    background-color: #e5e5e5;
+    background-color: #5eaa2f;
+    color: #8fc46e;
   }
+
+
 }

@@ -1,0 +1,254 @@
+.item {
+  margin-bottom: 6.8%;
+  border-top: 2px solid #e6e6e6;
+
+  &--last {
+    padding-top: 8%;
+    text-align: center;
+  }
+}
+
+.item__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.item__link {
+  @include link;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--plus {
+    min-width: 32px;
+    min-height: 32px;
+    margin-bottom: 7%;
+    &::before {
+      display: block;
+      content: "";
+      min-width: 32px;
+      min-height: 32px;
+      background-image: url("../img/icons/icon-plus-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+
+.item__cover {
+  width: 52%;
+  padding-top: 7.2%;
+}
+
+.item__title {
+  @include zeroing;
+
+  display: block;
+  width: 87px;
+  margin-bottom: 7%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &--long {
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+}
+
+.item__title-link {
+  @include link;
+
+  color: $black;
+}
+
+.item__description {
+  width: 100%;
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.item__description tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5%;
+}
+
+.item__link-button {
+  @include link;
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 3.1%;
+  font-size: 16px;
+  line-height: 20px;
+
+  &--all {
+    color: $black;
+    background-color: $lightblue;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: #bcbcbc;
+      background-color: #ebebeb;
+    }
+  }
+}
+
+.item__text {
+  @include zeroing;
+  margin-bottom: 6.5%;
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+}
+
+@media #{$tablet} {
+  .item {
+    width: 42.5%;
+    padding-top: 3.5%;
+    margin-bottom: 4.3%;
+    border: none;
+    background-image: linear-gradient($white 20%, #eaeaea 20%);
+
+    &--last {
+      padding-top: 0;
+      margin-top: 14%;
+      background: transparent;
+      border: 2px solid #e6e6e6;
+    }
+  }
+
+  .item__wrap {
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .item__link {
+    width: 100%;
+    min-width: 195px;
+    align-items: flex-end;
+    min-height: 213px;
+    margin-bottom: 10.2%;
+
+    &--small {
+      .item__image {
+        min-width: 161px;
+        min-height: 172px;
+      }
+    }
+
+    &--big {
+     .item__image {
+        min-width: 195px;
+        min-height: 208px;
+      }
+    }
+
+    &--plus {
+      margin-bottom: 1%;
+      &::before {
+        min-width: 60px;
+        min-height: 60px;
+        background-image: url("../img/icons/icon-plus.svg");
+      }
+    }
+  }
+
+  .item__title {
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 7.4%;
+    text-align: center;
+    font-size: 20px;
+
+    &--long {
+      margin-bottom: 0;
+    }
+  }
+
+  .item__cover {
+    width: 100%;
+    @include zeroing;
+  }
+
+  .item__description {
+    padding-left: 11%;
+    padding-right: 11%;
+    margin-bottom: 7%;
+    font-size: 16px;
+  }
+
+  .item__description tr {
+    width: 100%;
+    padding-bottom: 2.4%;
+    margin-bottom: 2.4%;
+    border-bottom: 2px solid #cdcdcd;
+  }
+
+  .item__text {
+  font-size: 16px;
+  width: 55%;
+  margin: 0 auto;
+}
+
+  .item__link-button {
+    width: 76.2%;
+    margin-bottom: 12%;
+  }
+}
+
+@media #{$desktop} {
+  .item {
+    width: 18.9%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 0;
+    margin-bottom: 5%;
+    //background-image: linear-gradient($white 22.5%, #eaeaea 22.5%);
+  }
+
+  .item__link {
+    margin-bottom: 13%;
+  }
+
+  .item__cover {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .item__title {
+    margin-bottom: 11%;
+  }
+
+  .item__description {
+    margin-bottom: 11%;
+  }
+
+  .item__description tr {
+    margin-bottom: 4.4%;
+  }
+
+  .item__link-button {
+    width: 68%;
+    padding: 4%;
+    margin-bottom: 15%;
+  }
+}

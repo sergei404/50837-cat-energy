@@ -9,8 +9,12 @@
 </head>
 <body>
   <header class="header header--show">
-    <a class="header__logo" href="#">
-      <img src="img/icons/logo-mobile.svg" alt="cat-energi logo" class="header__logo-image">
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-image" src="img/logo-mobile.svg" alt="Кэт энерджи">
+      </picture>
     </a>
     <button class="header__submit header__submit--active" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -25,7 +29,7 @@
           <a class="site-list__link site-list__link--active">каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">подбор програмы</a>
+          <a class="site-list__link" href="form.html">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -34,202 +38,261 @@
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
-        <li class="catalog__item">
-          <div class="catalog__wrap">
-            <a href="#" class="catalog__link"></a>
-              <img src="img/content/chicken-small-mobile@1x.jpg" alt="маленькая упаковка вкус курица" class="catalog__link-image">
+        <li class="catalog__item item">
+          <div class="item__wrap">
+            <a href="#" class="item__link item__link--small">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/chicken-small-desktop@1x.webp 1x, img/content/chicken-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/chicken-small-tablet@1x.webp 1x, img/content/chicken-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/chicken-small-mobile@1x.webp 1x, img/content/chicken-small-mobile@2x.webp 2x"> -->
+
+                <source media="(min-width: 1300px)" srcset="img/content/chicken-small-desktop@1x.png 1x, img/content/chicken-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/chicken-small-tablet@1x.png 1x, img/content/chicken-small-tablet@2x.png 2x">
+                <img class="item__image" src="img/content/chicken-small-mobile@1x.jpg" srcset="img/content/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy PRO 500 г Курица">
+              </picture>
             </a>
-            <div class="catalog__cover">
-              <h2 class="catalog__item-title">
-                <a href="#" class="catalog__title-link">cat energy pro 500 г</a>
+            <div class="item__cover">
+              <h2 class="item__title">
+                <a href="#" class="item__title-link">cat energy pro 500 г</a>
               </h2>
-              <table class="catalog__description">
+              <table class="item__description">
                 <tr>
-                  <td class="catalog__description-field">Объем</td>
-                  <td class="catalog__description-value">500 г</td>
+                  <td>Объем</td>
+                  <td>500 г</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Вкус</td>
-                  <td class="catalog__description-value">Курица</td>
+                  <td>Вкус</td>
+                  <td>Курица</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Цена</td>
-                  <td class="catalog__description-value">700 Р.</td>
+                  <td>Цена</td>
+                  <td>700 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a href="#" class="catalog__link-button link-button">заказать</a>
+          <a href="#" class="item__link-button link-button">заказать</a>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrap">
-            <a href="#" class="catalog__link"></a>
-            <img src="img/content/chicken-big-mobile@1x.jpg" alt="большая упаковка вкус курица" class="catalog__link-image">
+        <li class="catalog__item item">
+          <div class="item__wrap">
+            <a href="#" class="item__link item__link--big">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/chicken-big-desktop@1x.webp 1x, img/content/chicken-big-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/chicken-big-tablet@1x.webp 1x, img/content/chicken-big-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/chicken-big-mobile@1x.webp 1x, img/content/chicken-big-mobile@2x.webp 2x"> -->
+
+                <source media="(min-width: 1300px)" srcset="img/content/chicken-big-desktop@1x.png 1x, img/content/chicken-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/chicken-big-tablet@1x.png 1x, img/content/chicken-big-tablet@2x.png 2x">
+                <img class="item__image" src="img/content/chicken-big-mobile@1x.jpg" srcset="img/content/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy PRO 1000 г Курица">
+              </picture>
             </a>
-            <div class="catalog__cover">
-              <h2 class="catalog__item-title">
-                <a href="#" class="catalog__title-link">cat energy pro 1000 г</a>
+            <div class="item__cover">
+              <h2 class="item__title">
+                <a href="#" class="item__title-link">cat energy pro 1000 г</a>
               </h2>
-              <table class="catalog__description">
+              <table class="item__description">
                 <tr>
-                  <td class="catalog__description-field">Объем</td>
-                  <td class="catalog__description-value">1000 г</td>
+                  <td>Объем</td>
+                  <td>1000 г</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Вкус</td>
-                  <td class="catalog__description-value">Курица</td>
+                  <td>Вкус</td>
+                  <td>Курица</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Цена</td>
-                  <td class="catalog__description-value">1000 Р.</td>
+                  <td>Цена</td>
+                  <td>1000 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a href="#" class="catalog__link-button link-button">заказать</a>
+          <a href="#" class="item__link-button link-button">заказать</a>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrap">
-            <a href="#" class="catalog__link"></a>
-            <img src="img/content/fish-small-mobile@1x.jpg" alt="маленькая упаковка вкус рыба" class="catalog__link-image">
+        <li class="catalog__item item">
+          <div class="item__wrap">
+            <a href="#" class="item__link item__link--small">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/fish-small-desktop@1x.webp 1x, img/content/fish-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/fish-small-tablet@1x.webp 1x, img/content/fish-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/fish-small-mobile@1x.webp 1x, img/content/fish-small-mobile@2x.webp 2x"> -->
+
+                <source media="(min-width: 1300px)" srcset="img/content/fish-small-desktop@1x.png 1x, img/content/fish-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/fish-small-tablet@1x.png 1x, img/content/fish-small-tablet@2x.png 2x">
+                <img class="item__image" src="img/content/fish-small-mobile@1x.jpg" srcset="img/content/fish-small-mobile@2x.jpg 2x" alt="Cat Energy PRO 500 г Рыба">
+              </picture>
             </a>
-            <div class="catalog__cover">
-              <h2 class="catalog__item-title">
-                <a href="#" class="catalog__title-link">cat energy pro 500 г</a>
+            <div class="item__cover">
+              <h2 class="item__title">
+                <a href="#" class="item__title-link">cat energy pro 500 г</a>
               </h2>
-              <table class="catalog__description">
+              <table class="item__description">
                 <tr>
-                  <td class="catalog__description-field">Объем</td>
-                  <td class="catalog__description-value">500 г</td>
+                  <td>Объем</td>
+                  <td>500 г</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Вкус</td>
-                  <td class="catalog__description-value">Рыба</td>
+                  <td>Вкус</td>
+                  <td>Рыба</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Цена</td>
-                  <td class="catalog__description-value">700 Р.</td>
+                  <td>Цена</td>
+                  <td>700 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a href="#" class="catalog__link-button link-button">заказать</a>
+          <a href="#" class="item__link-button link-button">заказать</a>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrap">
-            <a href="#" class="catalog__link"></a>
-            <img src="img/content/fish-big-mobile@1x.jpg" alt="большая упаковка вкус рыба" class="catalog__link-image">
+        <li class="catalog__item item">
+          <div class="item__wrap">
+            <a href="#" class="item__link item__link--big">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/fish-big-desktop@1x.webp 1x, img/content/fish-big-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/fish-big-tablet@1x.webp 1x, img/content/fish-big-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/fish-big-mobile@1x.webp 1x, img/content/fish-big-mobile@2x.webp 2x"> -->
+
+                <source media="(min-width: 1300px)" srcset="img/content/fish-big-desktop@1x.png 1x, img/content/fish-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/fish-big-tablet@1x.png 1x, img/content/fish-big-tablet@2x.png 2x">
+                <img class="item__image" src="img/content/fish-big-mobile@1x.jpg" srcset="img/content/fish-big-mobile@2x.jpg 2x" alt="Cat Energy PRO 1000 г Рыба">
+              </picture>
             </a>
-            <div class="catalog__cover">
-              <h2 class="catalog__item-title">
-                <a href="#" class="catalog__title-link">cat energy pro 500 г</a>
+            <div class="item__cover">
+              <h2 class="item__title">
+                <a href="#" class="item__title-link">cat energy pro 1000 г</a>
               </h2>
-              <table class="catalog__description">
+              <table class="item__description">
                 <tr>
-                  <td class="catalog__description-field">Объем</td>
-                  <td class="catalog__description-value">1000 г</td>
+                  <td>Объем</td>
+                  <td>1000 г</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Вкус</td>
-                  <td class="catalog__description-value">Рыба</td>
+                  <td>Вкус</td>
+                  <td>Рыба</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Цена</td>
-                  <td class="catalog__description-value">1000 Р.</td>
+                  <td>Цена</td>
+                  <td>1000 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a href="#" class="catalog__link-button link-button">заказать</a>
+          <a href="#" class="item__link-button link-button">заказать</a>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrap">
-            <a href="#" class="catalog__link"></a>
-            <img src="img/content/buckwheat-small-mobile@1x.jpg" alt="маленькая упаковка вкус гречка" class="catalog__link-image">
+        <li class="catalog__item item">
+          <div class="item__wrap">
+            <a href="#" class="item__link item__link--small">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/buckwheat-small-desktop@1x.webp 1x, img/content/buckwheat-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/buckwheat-small-tablet@1x.webp 1x, img/content/buckwheat-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/buckwheat-small-mobile@1x.webp 1x, img/content/buckwheat-small-mobile@2x.webp 2x"> -->
+
+                <source media="(min-width: 1300px)" srcset="img/content/buckwheat-small-desktop@1x.png 1x, img/content/buckwheat-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/buckwheat-small-tablet@1x.png 1x, img/content/buckwheat-small-tablet@2x.png 2x">
+                <img class="item__image" src="img/content/buckwheat-small-mobile@1x.jpg" srcset="img/content/buckwheat-small-mobile@2x.jpg 2x"
+                  alt="Cat Energy Slim 500 г Гречка">
+              </picture>
             </a>
-            <div class="catalog__cover">
-              <h2 class="catalog__item-title">
-                <a href="#" class="catalog__title-link">cat energy slim 500 г</a>
+            <div class="item__cover">
+              <h2 class="item__title">
+                <a href="#" class="item__title-link">cat energy slim 500 г</a>
               </h2>
-              <table class="catalog__description">
+              <table class="item__description">
                 <tr>
-                  <td class="catalog__description-field">Объем</td>
-                  <td class="catalog__description-value">500 г</td>
+                  <td>Объем</td>
+                  <td>500 г</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Вкус</td>
-                  <td class="catalog__description-value">Гречка</td>
+                  <td>Вкус</td>
+                  <td>Гречка</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Цена</td>
-                  <td class="catalog__description-value">400 Р.</td>
+                  <td>Цена</td>
+                  <td>400 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a href="#" class="catalog__link-button link-button">заказать</a>
+          <a href="#" class="item__link-button link-button">заказать</a>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrap">
-            <a href="#" class="catalog__link"></a>
-            <img src="img/content/buckwheat-big-mobile@1x.jpg" alt="большая упаковка вкус гречка" class="catalog__link-image">
+        <li class="catalog__item item">
+          <div class="item__wrap">
+            <a href="#" class="item__link item__link--big">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/buckwheat-big-desktop@1x.webp 1x, img/content/buckwheat-big-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/buckwheat-big-tablet@1x.webp 1x, img/content/buckwheat-big-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/buckwheat-big-mobile@1x.webp 1x, img/content/buckwheat-big-mobile@2x.webp 2x"> -->
+
+                <source media="(min-width: 1300px)" srcset="img/content/buckwheat-big-desktop@1x.png 1x, img/content/buckwheat-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/buckwheat-big-tablet@1x.png 1x, img/content/buckwheat-big-tablet@2x.png 2x">
+                <img class="item__image" src="img/content/buckwheat-big-mobile@1x.jpg" srcset="img/content/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Slim 1000 г Гречка">
+              </picture>
             </a>
-            <div class="catalog__cover">
-              <h2 class="catalog__item-title">
-                <a href="#" class="catalog__title-link">cat energy slim 1000 г</a>
+            <div class="item__cover">
+              <h2 class="item__title">
+                <a href="#" class="item__title-link">cat energy slim 1000 г</a>
               </h2>
-              <table class="catalog__description">
+              <table class="item__description">
                 <tr>
-                  <td class="catalog__description-field">Объем</td>
-                  <td class="catalog__description-value">1000 г</td>
+                  <td>Объем</td>
+                  <td>1000 г</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Вкус</td>
-                  <td class="catalog__description-value">Гречка</td>
+                  <td>Вкус</td>
+                  <td>Гречка</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Цена</td>
-                  <td class="catalog__description-value">700 Р.</td>
+                  <td>Цена</td>
+                  <td>700 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a href="#" class="catalog__link-button link-button">заказать</a>
+          <a href="#" class="item__link-button link-button">заказать</a>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrap">
-            <a href="#" class="catalog__link"></a>
-              <img src="img/content/rice-small-mobile@1x.jpg" alt="маленькая упаковка вкус рис" class="catalog__link-image">
+        <li class="catalog__item item">
+          <div class="item__wrap">
+            <a href="#" class="item__link item__link--small">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/rice-small-desktop@1x.webp 1x, img/content/rice-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/rice-small-tablet@1x.webp 1x, img/content/rice-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/rice-small-mobile@1x.webp 1x, img/content/rice-small-mobile@2x.webp 2x"> -->
+
+                <source media="(min-width: 1300px)" srcset="img/content/rice-small-desktop@1x.png 1x, img/content/rice-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/rice-small-tablet@1x.png 1x, img/content/rice-small-tablet@2x.png 2x">
+                <img class="item__image" src="img/content/rice-small-mobile@1x.jpg" srcset="img/content/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 г Рис">
+              </picture>
             </a>
-            <div class="catalog__cover">
-              <h2 class="catalog__item-title">
-                <a href="#" class="catalog__title-link">cat energy slim 500 г</a>
+            <div class="item__cover">
+              <h2 class="item__title">
+                <a href="#" class="item__title-link">cat energy slim 500 г</a>
               </h2>
-              <table class="catalog__description">
+              <table class="item__description">
                 <tr>
-                  <td class="catalog__description-field">Объем</td>
-                  <td class="catalog__description-value">500 г</td>
+                  <td>Объем</td>
+                  <td>500 г</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Вкус</td>
-                  <td class="catalog__description-value">Рис</td>
+                  <td>Вкус</td>
+                  <td>Рис</td>
                 </tr>
                 <tr>
-                  <td class="catalog__description-field">Цена</td>
-                  <td class="catalog__description-value">500 Р.</td>
+                  <td>Цена</td>
+                  <td>500 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a href="#" class="catalog__link-button link-button">заказать</a>
+          <a href="#" class="item__link-button link-button">заказать</a>
         </li>
-        <li class="catalog__item catalog__item--last">
-          <a href="#" class="catalog__link catalog__link-plus"><span class="visually-hidden">показать еще</span></a>
-          <h2 class="catalog__item-title">
-            <a href="#" class="catalog__title-link catalog__item-link--width">показать еще 100500 товаров</a>
+        <li class="catalog__item item item--last">
+          <!-- <div class="item__wrap item_wrap--still"> -->
+          <a href="#" class="item__link item__link--plus"><span class="visually-hidden">показать еще</span></a>
+          <h2 class="item__title item__title--long">
+            <a href="#" class="item__title-link item__item-link--width">показать еще 100500 товаров</a>
           </h2>
-          <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="catalog__link-button link-button catalog__link-button--all">показать все</a>
+          <p class="item__text">На самом деле вкусов гораздо больше!</p>
+          <a href="#" class="item__link-button link-button item__link-button--all">показать все</a>
+
         </li>
       </ul>
     </section>
@@ -244,7 +307,7 @@
             <table class="more-produkts__table">
               <tr>
                 <td class="more-produkts__field">1 упаковка (100 г)</td>
-                <td class="more-produkts__value">200 Р.</td>
+                <td class="more-produkts__value">100 Р.</td>
               </tr>
             </table>
             <a href="#" class="more-produkts__link-button link-button">заказать</a>
@@ -304,75 +367,79 @@
       <div class="card__wrap"></div>
     </section>
     <div class="footer__wrap">
-      <a class="footer__logo" href="#"><img src="../img/icons/logo-footer.svg" alt="cat-energi logo footer" class="footer__logo-image"></a>
-      <ul class="footer__list social">
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <svg version="1.1" id="Layer_1" width="22" height="12" fill="#666666" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;"
-              xml:space="preserve">
-              <g>
-                <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
-                    c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
-                    c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2
-                    C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0
-                    c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9
-                    c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5
-                    c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3
-                    c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1
-                    c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7
-                    c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0
-                    C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3
-                    c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2
-                    c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8
-                    c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
-                    c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z" />
-              </g>
-            </svg>
-            <span class="visually-hidden">vk</span>
-          </a>
-        </li>
-        <li class="footer__item social__item">
-          <a href="#" class="social__link">
-            <svg version="1.1" id="Layer_1" width="16" height="16" fill="#666666" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;"
-              xml:space="preserve">
-              <style type="text/css">
-                .st0 {
-                  fill: #231F20;
-                }
-              </style>
-              <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
-                  L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z" />
-              <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
-                  C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z" />
-              <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
-            </svg>
-            <span class="visually-hidden">instagram</span>
-          </a>
-        </li>
-        <li class="footer__item social__item">
-          <a href="#" class="social__link">
-            <svg version="1.1" id="Layer_1" width="10" height="19" fill="#666666" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;"
-              xml:space="preserve">
-              <g>
-                <path d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
-                      M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
-                    H1.1v2.3h2V18z" />
-              </g>
-            </svg>
-            <span class="visually-hidden">facebook</span>
-          </a>
-        </li>
-      </ul>
+      <a class="footer__logo" href="#"><img src="../img/logo-footer.svg" alt="cat-energi logo footer" class="footer__logo-image"></a>
+      <div class="social footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              <!-- <svg width="22" height="12" fill="#666666">
+                        <use xlink:href="../img/icons/#vk-mobile"></use>
+                      </svg> -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                <g>
+                  <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
+                          c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
+                          c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2
+                          C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0
+                          c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9
+                          c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5
+                          c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3
+                          c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1
+                          c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7
+                          c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0
+                          C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3
+                          c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2
+                          c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8
+                          c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
+                          c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z" />
+                </g>
+              </svg>
+              <span class="visually-hidden">vk</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--insta">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <style type="text/css">
+                  <!-- .st0 {
+                    fill: #231F20;
+                  }
+
+                  -->
+                </style>
+                <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
+                        L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z" />
+                <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
+                        C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z" />
+                <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
+              </svg>
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+                <g>
+                  <path d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
+                           M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
+                          H1.1v2.3h2V18z" />
+                </g>
+              </svg>
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="footer__copyright">
-        <p class="footer__text"><span class="footer__text-uppercase">html</span> academy</p>
         <a href="https://up.htmlacademy.ru/adaptive/15" class="footer__link-html" alt="htmlacademy logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 60 60">
-            <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
           </svg>
         </a>
+        <p class="footer__text"><span class="footer__text-uppercase">html</span> academy</p>
       </div>
     </div>
   </footer>
