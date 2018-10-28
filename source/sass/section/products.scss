@@ -1,6 +1,6 @@
 .products {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .products__losing-weight,
@@ -8,13 +8,16 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 9%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: 4%;
+  padding-top: 10.5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-bottom: 7%;
   background-color: $lightblue;
 }
 
+.products__mass-gathering {
+  margin-bottom: 6.5%;
+}
 
 .products__title {
   position: relative;
@@ -23,7 +26,7 @@
 
   @include zeroing;
   padding-left: 70px;
-  margin-bottom: 5%;
+  margin-bottom: 6.5%;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -32,35 +35,33 @@
   &::before {
     position: absolute;
     left: 0;
-    top: -8px;
+    top: -7px;
     display: block;
     content: "";
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
     background-color: $green;
     border-radius: 50%;
   }
 
   &::after {
     position: absolute;
-    left: 5px;
+    left: 6px;
     top: -13px;
     display: block;
     content: "";
     width: 40px;
-    height: 56px;
+    height: 53px;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("../img/icons/icon-cat-slim.svg");
   }
 
   &--mass {
-    padding-left: 85px;
-
     &::after {
       left: -8px;
       top: 0;
-      width: 71px;
+      width: 69px;
       height: 35px;
       background-image: url("../img/icons/icon-cat-pro.svg");
     }
@@ -69,8 +70,7 @@
 
 .products__text {
   display: block;
-  padding-right: 10%;
-  padding-bottom: 8%;
+  padding-bottom: 9.8%;
   margin-bottom: 8%;
   font-family: $arial;
   font-size: 14px;
@@ -79,45 +79,65 @@
 }
 
 .products__link {
+  min-width: 130px;
   display: flex;
   align-items: center;
 
   @include link;
-  padding-bottom: 8%;
+  margin-bottom: 9.5%;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+  white-space: nowrap;
   color: $black;
 
   &::after {
     display: block;
     content: "";
     width: 25px;
-    height: 13px;
-    margin-left: 5%;
+    height: 11px;
+    margin-left: 15px;
     background-image: url("../img/icons/icon-right-arrow-long.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    &::after {
+      width: 32px;
+      background-image: url("../img/icons/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media #{$tablet} {
+  .products {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
   .products__losing-weight,
   .products__mass-gathering {
-    padding-left: 6%;
+    padding-top: 10.6%;
+    padding-left: 7.5%;
+    margin-bottom: 4.4%;
   }
 
   .products__title {
     padding-left: 0;
     font-size: 36px;
     line-height: 37px;
-    margin-bottom: 2%;
+    margin-bottom: 1.5%;
 
     &::before {
       left: auto;
-      right: -15px;
-      top: 20px;
+      right: 2px;
+      top: 15px;
       width: 200px;
       height: 200px;
       margin-right: 0;
@@ -125,39 +145,48 @@
 
     &::after {
       left: auto;
-      right: 18px;
-      top: 9px;
+      right: 33px;
+      top: 1px;
       width: 142px;
-      height: 192px;
+      height: 199px;
       margin-right: 0;
     }
 
     &--mass {
       &::after {
         left: auto;
-        right: -48px;
-        top: 66px;
-        width: 267px;
+        right: -31px;
+        top: 60px;
+        width: 270px;
         height: 112px;
       }
     }
   }
 
   .products__text {
-    padding-right: 34%;
-    margin-bottom: 2%;
+    padding-right: 36%;
+    margin-bottom: 9.3%;
+    padding-bottom: 0;
     font-size: 16px;
     line-height: 24px;
     border: none;
 
     &--last {
-      padding-right: 40%;
+      padding-right: 42.5%;
     }
   }
 
   .products__link {
+    width: 155px;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 10.5%;
+  }
+
+  .products__mass-gathering {
+    .products__link {
+      width: 150px;
+    }
   }
 }
 
@@ -165,19 +194,21 @@
   .products {
     display: flex;
     justify-content: space-between;
+    padding-left: 7.6%;
+    padding-right: 7.6%;
   }
 
   .products__losing-weight,
   .products__mass-gathering {
-    width: 47.5%;
-    padding-top: 5%;
+    width: 46.7%;
+    padding-top: 6.3%;
     padding-right: 2%;
-    padding-left: 4%;
+    padding-left: 4.3%;
   }
 
   .products__title {
-    padding-left: 130px;
-    margin-bottom: 10%;
+    padding-left: 161px;
+    margin-bottom: 11.7%;
 
     &::before {
       left: 0;
@@ -188,7 +219,7 @@
     }
 
     &::after {
-      left: 10px;
+      left: 13px;
       right: auto;
       top: -37px;
       width: 70px;
@@ -196,12 +227,10 @@
     }
 
     &--mass {
-      padding-left: 140px;
-
       &::after {
         left: -17px;
         right: auto;
-        top: -12px;
+        top: -9px;
         width: 134px;
         height: 56px;
       }
@@ -210,10 +239,10 @@
 
   .products__text {
     padding-right: 0;
-    margin-bottom: 2%;
+    margin-bottom: 6.2%;
   }
 
   .products__link {
-    white-space: nowrap;
+    margin-bottom: 13%;
   }
 }

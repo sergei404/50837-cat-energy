@@ -28,25 +28,51 @@
   }
 
   .site-list__item {
-    @include zeroing;
-    margin-left: 4%;
+    margin-left: 7%;
+    padding-top: 0;
     border: none;
   }
 
   .site-list__link {
     font-size: 18px;
     line-height: 25px;
+    font-weight: 400;
     white-space: nowrap;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+
+    &--active {
+      padding-bottom: 4%;
+      border-bottom: 2px solid $green;
+    }
   }
 }
 
 @media #{$desktop} {
   .site-list {
+    padding-top: 1%;
+
     &--color {
+      padding-top: 0.7%;
+
       .site-list__link {
         color: $white;
+
+        &--active {
+          border-bottom: 2px solid $white;
+        }
       }
     }
+  }
+
+  .site-list__item {
+    margin-left: 3.4%;
   }
 
   .site-list__link {

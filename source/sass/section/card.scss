@@ -1,21 +1,21 @@
 .card {
   width: 100%;
-  padding-top: 10%;
+  padding-top: 3%;
   background-color: $white;
 }
 
 .card__contacts {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 7%;
-  padding-right: 7%;
-  margin-bottom: 7%;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-bottom: 3%;
 }
 
 .card__tagline {
   display: block;
-  width: 46%;
+  width: 50%;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -25,7 +25,7 @@
 
 .card__adress {
   display: block;
-  width: 46%;
+  width: 50%;
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
@@ -33,16 +33,28 @@
 
 .card__wrap {
   width: 100%;
-  min-height: 360px;
-  background-image: url("../img/bg/bg-map-mobile@1x.png");
-  background-position: center center;
+  min-height: 365px;
+  background-image: url("../img/map-pin.png"), url("../img/bg/bg-map-mobile@1x.png");
+  background-position: center 45%, bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 60px auto, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map-pin.png"), url("../img/bg/bg-map-mobile@2x.png");
+    background-size: 60px auto cover;
+  }
 }
 
 @media #{$tablet} {
+  .card {
+    padding-top: 4.2%;
+  }
+
   .card__contacts {
     justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 9%;
+    margin-bottom: 5.5%;
   }
 
   .card__tagline {
@@ -52,13 +64,26 @@
   }
 
   .card__adress {
-    width: 30%;
+    width: 170px;
+    margin-bottom: 0;
     font-size: 16px;
     text-align: end;
   }
 
   .card__adress-town {
-    line-height: 55px;
+    line-height: 60px;
+  }
+
+  .card__wrap {
+    min-height: 390px;
+    background-image: url("../img/map-pin.png"), url("../img/bg/bg-map-tablet@1x.png");
+    background-size: 110px auto, cover;
+    background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"), url("../img/bg/bg-map-tablet@2x.png");
+      background-size: 110px auto cover;
+    }
   }
 }
 
@@ -70,17 +95,32 @@
 
   .card__contacts {
     position: absolute;
-    top: 105px;
-    left: 88px;
+    top: 95px;
+    left: 110px;
     justify-content: space-around;
     min-width: 570px;
-    min-height: 210px;
+    min-height: 200px;
 
     @include zeroing;
+    padding-left: 1.8%;
+    padding-right: 1.6%;
+    padding-top: 0.7%;
     background-color: $white;
   }
 
+  .card__adress {
+    text-align: start;
+  }
+
   .card__wrap {
-    min-height: 410px;
+    min-height: 400px;
+    background-image: url("../img/map-pin.png"), url("../img/bg/bg-map-desktop@1x.png");
+    background-position: 75.5% center;
+    background-size: 110px auto, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"), url("../img/bg/bg-map-desktop@2x.png");
+      background-size: 110px auto cover;
+    }
   }
 }

@@ -1,12 +1,15 @@
 .working {
-  padding-left: 5%;
-  padding-right: 7%;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-bottom: 13.5%;
 }
 
 .working__title {
+  @include zeroing;
+
+  margin-bottom: 11.2%;
   font-size: 36px;
   font-weight: 400;
-  line-height: 60px;
   color: $black;
 }
 
@@ -17,8 +20,7 @@
 .working__item {
   display: flex;
   align-items: center;
-  padding-right: 11%;
-  margin-bottom: 6%;
+  margin-bottom: 7.1%;
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
@@ -29,7 +31,7 @@
     content: "";
     min-width: 60px;
     height: 60px;
-    margin-right: 7%;
+    margin-right: 7.5%;
     background-color: $green;
     background-repeat: no-repeat;
     background-position: center center;
@@ -62,45 +64,58 @@
 
 @media #{$tablet} {
   .working {
+    padding-left: 4%;
+    padding-top: 2%;
+    margin-bottom: 0;
     border-bottom: 2px solid #e6e6e6;
   }
 
   .working__title {
+    margin-bottom: 10.5%;
     font-size: 60px;
     line-height: 60px;
   }
 
   .working__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 15%;
+    padding-bottom: 11%;
   }
 
   .working__item {
     position: relative;
-    width: 50%;
-    padding-right: 12.5%;
-    margin-bottom: 24%;
+    width: 44.5%;
+    padding-right: 12%;
+    margin-bottom: 19.5%;
     flex-wrap: wrap;
     font-size: 16px;
     line-height: 24px;
     z-index: 1;
 
     &::before {
-      margin-bottom: 20%;
+      min-width: 80px;
+      min-height: 80px;
+      margin-bottom: 13%;
     }
 
     &::after {
       position: absolute;
-      right: 85px;
+      right: 60px;
       top: -40px;
       display: block;
-      content: "1";
       font-family: $oswald;
       font-size: 281px;
       line-height: 281px;
       color: $lightblue;
       z-index: -1;
+    }
+
+    &--sheet {
+      &::after {
+        content: "1";
+        right: 80px;
+      }
     }
 
     &--water {
@@ -110,7 +125,7 @@
     }
 
     &--spoon {
-      margin-bottom: 5%;
+      margin-bottom: 4%;
 
       &::after {
         content: "3";
@@ -118,10 +133,12 @@
     }
 
     &--time {
-      margin-bottom: 5%;
+      padding-right: 8%;
+      margin-bottom: 4%;
 
       &::after {
         content: "4";
+        right: 60px;
       }
     }
   }
@@ -129,40 +146,39 @@
 
 @media #{$desktop} {
   .working {
-    padding-right: 5%;
+    padding-right: 6.6%;
+    padding-left: 7.6%;
+    padding-top: 1.1%;
     border: none;
   }
 
   .working__title {
-    margin-bottom: 10%;
+    margin-bottom: 6%;
   }
 
   .working__list {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 1.7%;
   }
 
   .working__item {
-    width: 25%;
-    padding-right: 5%;
-    margin-bottom: 5%;
+    width: 21%;
+    padding-right: 0;
+    margin-bottom: 0;
 
     &::before {
       min-width: 80px;
       min-height: 80px;
-      margin-bottom: 14%;
+      margin-bottom: 12%;
     }
 
     &::after {
-      right: 50px;
+      right: 12px;
     }
 
-    &--time {
-      padding-right: 4%;
-
+    &--sheet {
       &::after {
-        right: 44px;
+        right: 30px;
       }
     }
   }
