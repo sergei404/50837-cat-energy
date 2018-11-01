@@ -23,9 +23,6 @@
 .promo__wrap {
   position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 8.3%;
   text-align: center;
   z-index: 1;
@@ -36,7 +33,8 @@
   width: 86%;
 
   @include zeroing;
-  margin-bottom: 3.5%;
+  margin: 0 auto;
+  margin-bottom: 8%;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -44,7 +42,7 @@
 }
 
 .promo__tagline {
-  margin-bottom: 8.5%;
+  margin-bottom: 9%;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -54,7 +52,7 @@
 
 .promo__cover {
   min-width: 280px;
-  min-height: 270;
+  min-height: 270px;
 }
 
 .promo__link {
@@ -63,6 +61,7 @@
   @include link;
   padding-top: 3.5%;
   padding-bottom: 3.5%;
+  margin: 0 auto;
   margin-bottom: 7%;
   font-size: 14px;
   line-height: 18px;
@@ -70,7 +69,8 @@
 
 @media #{$tablet} {
   .promo {
-    padding-left: 15.2%;
+    padding-left: 15.3%;
+    margin-bottom: 530px;
 
     &::before {
       display: none;
@@ -78,14 +78,14 @@
   }
 
   .promo__wrap {
-    align-items: flex-start;
-    text-align: start;
-    padding-top: 3.8%;
+    padding-top: 4%;
+    text-align: left;
   }
 
   .promo__title {
     width: 445px;
-    margin-bottom: 3.3%;
+    margin-bottom: 6.4%;
+    margin-left: 0;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -100,20 +100,19 @@
   }
 
   .promo__cover {
-    position: relative;
+    position: absolute;
     min-width: 709px;
     min-height: 609px;
-    order: 1;
-    align-self: center;
-    margin-top: -17%;
-    margin-right: 18.5%;
+    top: 74%;
+    right: 4.5%;
     z-index: -1;
   }
 
   .promo__link {
-    width: 247px;
-    padding: 2.5%;
+    width: 245px;
+    padding: 16px;
     margin-bottom: 4.2%;
+    margin-left: 2px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -122,12 +121,13 @@
 @media #{$desktop} {
   .promo {
     padding-left: 13.1%;
-    margin-bottom: 1.8%;
+    margin-bottom: 268px;
 
     &::before {
       display: block;
       width: 50%;
-      min-height: 695px;
+      min-width: 620px;
+      min-height: 700px;
       right: 0;
       background-image: url("../img/bg/index-background-desktop@1x.jpg");
       background-position: center center;
@@ -139,21 +139,22 @@
   }
 
   .promo__wrap {
-    padding-top: 17.8%;
+    padding-top: 18%;
   }
 
   .promo__title {
-    margin-bottom: 1.5%;
+    width: 40%;
+    margin-bottom: 3.4%;
   }
 
   .promo__tagline {
-    margin-bottom: 4.3%;
+    width: 23%;
+    margin-bottom: 4.2%;
   }
 
   .promo__cover {
-    align-self: flex-end;
-    margin-top: -33.5%;
-    margin-right: 13.6%;
+    top: 28.5%;
+    right: 13.6%;
   }
 
   .promo__link {
