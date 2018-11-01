@@ -8,7 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 10.5%;
+  padding-top: 11%;
   padding-left: 8%;
   padding-right: 8%;
   margin-bottom: 7%;
@@ -16,7 +16,7 @@
 }
 
 .products__mass-gathering {
-  margin-bottom: 6.5%;
+  margin-bottom: 8%;
 }
 
 .products__title {
@@ -79,9 +79,10 @@
 }
 
 .products__link {
-  min-width: 130px;
+  min-width: 125px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   @include link;
   margin-bottom: 9.5%;
@@ -97,7 +98,7 @@
     content: "";
     width: 25px;
     height: 11px;
-    margin-left: 15px;
+    margin-right: 7px;
     background-image: url("../img/icons/icon-right-arrow-long.svg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -106,6 +107,7 @@
   &:hover {
     &::after {
       width: 32px;
+      margin-right: 0;
       background-image: url("../img/icons/icon-right-arrow-verylong.svg");
     }
   }
@@ -124,7 +126,7 @@
   .products__losing-weight,
   .products__mass-gathering {
     padding-top: 10.6%;
-    padding-left: 7.5%;
+    padding-left: 7.3%;
     margin-bottom: 4.4%;
   }
 
@@ -136,7 +138,7 @@
 
     &::before {
       left: auto;
-      right: 2px;
+      right: 3px;
       top: 15px;
       width: 200px;
       height: 200px;
@@ -165,7 +167,7 @@
 
   .products__text {
     padding-right: 36%;
-    margin-bottom: 9.3%;
+    margin-bottom: 9.4%;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 24px;
@@ -177,7 +179,7 @@
   }
 
   .products__link {
-    width: 155px;
+    width: 163px;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 10.5%;
@@ -185,7 +187,7 @@
 
   .products__mass-gathering {
     .products__link {
-      width: 150px;
+      width: 156px;
     }
   }
 }
@@ -193,22 +195,25 @@
 @media #{$desktop} {
   .products {
     display: flex;
-    justify-content: space-between;
-    padding-left: 7.6%;
-    padding-right: 7.6%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
   }
 
   .products__losing-weight,
   .products__mass-gathering {
-    width: 46.7%;
+    width: 570px;
     padding-top: 6.3%;
-    padding-right: 2%;
     padding-left: 4.3%;
+    padding-right: 4%;
+  }
+
+  .products__losing-weight {
+    margin-right: auto;
   }
 
   .products__title {
     padding-left: 161px;
-    margin-bottom: 11.7%;
+    margin-bottom: 11.9%;
 
     &::before {
       left: 0;
@@ -239,10 +244,10 @@
 
   .products__text {
     padding-right: 0;
-    margin-bottom: 6.2%;
+    margin-bottom: 6.8%;
   }
 
   .products__link {
-    margin-bottom: 13%;
+    margin-bottom: 13.5%;
   }
 }

@@ -31,21 +31,6 @@
     fill: #666666;
   }
 
-  &--vk svg {
-    width: 22px;
-    height: 12px;
-  }
-
-  &--insta svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  &--fb svg {
-    width: 10px;
-    height: 19px;
-  }
-
   &:hover {
     svg {
       fill: $green;
@@ -53,21 +38,20 @@
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }
 
 @media #{$tablet} {
   .social {
-    width: 33%;
-    padding-top: 0;
-    padding-bottom: 0;
+    width: 40%;
+
+    @include zeroing;
     border: none;
   }
 
   .social__list {
-    width: 52%;
-    margin-right: 6%;
+    margin-right: -6%;
   }
 
 
@@ -90,7 +74,7 @@
 }
 
 @media #{$desktop} {
-  .social__list {
-    width: 31%;
+  .social {
+    width: 23.5%;
   }
 }

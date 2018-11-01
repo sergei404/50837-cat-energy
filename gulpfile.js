@@ -16,10 +16,12 @@ var run = require("run-sequence");
 var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
 
-gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss")
+gulp.task("style", function () {
+  gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -30,17 +32,17 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("server", function () {
+gulp.task("serve", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
 gulp.task("webp", function () {
@@ -97,7 +99,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
-    "css",
+    "style",
     "sprite",
     "html",
     done

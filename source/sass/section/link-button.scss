@@ -12,6 +12,10 @@
     background-color: #5eaa2f;
   }
 
+  &:focus {
+    outline: 1px solid #af16bd;
+  }
+
   &:active {
     background-color: #5eaa2f;
     color: #8fc46e;
