@@ -45,8 +45,8 @@
 @media #{$tablet} {
   .social {
     width: 40%;
-    @include zeroing;
 
+    @include zeroing;
     border: none;
   }
 
